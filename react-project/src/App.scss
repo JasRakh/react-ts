@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+nav ul {
+   display: flex;
+  li{
+    width: 100px;
+    a {
+      font-size: 20px;
+      font-weight: bold;
+      color: #556581;
+      display: inline-block;
+      padding:10px 20px;
+      border-radius: 4px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+ }
