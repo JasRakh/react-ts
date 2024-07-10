@@ -5,6 +5,7 @@ import Modal from "./components/Modal";
 import Quiz from "./components/Quiz/Quiz.tsx";
 import Users from "./components/Users";
 import { FC, memo } from "react";
+import Todo from "./components/Todo/Todo.tsx";
 
 const App: FC = memo(() => {
   return (
@@ -25,6 +26,9 @@ const App: FC = memo(() => {
               <li>
                 <NavLink to="/users">Users</NavLink>
               </li>
+              <li>
+                <NavLink to="/Todo">Todo</NavLink>
+              </li>
             </ul>
           </nav>
 
@@ -33,6 +37,7 @@ const App: FC = memo(() => {
             <Route path="/modal" element={<Modal />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/users" element={<Users />} />
+            <Route path="/Todo" element={<Todo />} />
           </Routes>
         </div>
       </BrowserRouter>

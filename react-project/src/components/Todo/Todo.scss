@@ -1,0 +1,17 @@
+.todo{
+  text-align: center;
+  li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    margin-bottom: 10px;
+  }
+  .delete{
+    cursor: pointer;
+    color: red;
+  }
+  input:checked + span{
+    text-decoration: line-through;
+  }
+}
