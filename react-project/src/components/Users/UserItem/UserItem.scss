@@ -1,0 +1,30 @@
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  & > div {
+    display: flex;
+  }
+  svg{
+    width: 12px;
+  }
+  img.avatar {
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  .action {
+    width: 28px;
+    height: 28px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

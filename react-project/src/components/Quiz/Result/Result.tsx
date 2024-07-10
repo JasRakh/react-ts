@@ -1,9 +1,10 @@
 import './Result.scss'
 import {FC} from "react";
+import { QuestionProps } from '../../interfaces.tsx'
 
 interface IResultProps{
     score: number;
-    quiz: { title: string, variants: string[], correct: number }[];
+    quiz: QuestionProps[];
 }
 const Result: FC<IResultProps> = ({score, quiz}) => {
     return (
